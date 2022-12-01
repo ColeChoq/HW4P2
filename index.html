@@ -1,0 +1,98 @@
+<!--
+Author: Colton Choquette
+Email: Colton_Choquette@student.uml.edu
+
+The purpose of this file is to provide the content for the html page including the 
+input forms, generate button, and table placeholder to be overwritten after input
+
+
+-->
+
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Multiplication Table</title>
+    <!--Add CSS style here      -->
+    <link rel="stylesheet" href="css/style.css">
+    <!--I had a lot of trouble getting the correct libraries to work so I found these online -->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    
+  </head>
+  <body>
+    
+    <h1>Multiplication Table</h1>
+
+    <!--This section is responsible for all user input including forms 
+    and generate table button. It also sets id's which is VITAL for this project     -->
+    <div id="forms">
+      <form class="cmxform" id="myForm" method="get" autocomplete="off">
+        <p>
+          <label for="maxRowVaule">Maximum Row Value:</label>
+          <input id="maxRowValue" name="maxRowValue" type="number">   
+          <div id="rowMaxSlider"></div>        
+        </p>
+        <br>
+        <p>
+          <label for="minRowValue">Minimum Row Value:</label>
+          <input id="minRowValue" name="minRowValue" type="number">
+          <div id="rowMinSlider"></div>
+        </p>
+        <br>
+        <p>
+          <label for="maxColValue">Maximum Column Value:</label>
+          <input id="maxColValue" name="maxColValue" type="number" >
+          <div id="colMaxSlider"></div>
+        </p>
+        <br>
+        <p>
+          <label for="minColValue">Minimum Column Value:</label>
+          <input id="minColValue" name="minColValue" type="number" > 
+          <div id="colMinSlider"></div>
+        </p>
+        <br>
+        <p>
+            <input class="submit" type="submit" value="submit" />
+        </p>
+      </form>
+      <div id="warning_msg"></div>
+     
+      <!--<input type="button" id="gen" value="Generate table" onclick="generateTable()" />-->
+    </div>
+    
+
+    
+    <!--This is a placeholder table meant to be replaced once valid input has been entered-->
+    <div id="tabl">
+      <table id="table">
+        <tbody>
+          
+        </tbody>
+      </table>
+    </div>
+    
+    <!--Tabs area-->
+    <div id="myTabs">
+      <ul id="tabs">
+        
+      </ul>
+      
+    </div>
+    <!--I Could not figure out how to delete tabs effectively so I just added a button to refresh the page thereby deleting all tabs-->
+    <button onClick="window.location.reload();">Delete All</button>
+    <!--Add JavaScript here      --> 
+    
+    
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+    <script src="js/javascript.js"></script>
+    
+  </body>
+</html>
+
+

@@ -1,0 +1,85 @@
+/*
+Author: Colton Choquette
+Email: Colton_Choquette@student.uml.edu
+
+The purpose of this file is to provide styling for the html page
+
+
+*/
+
+
+.ui-slider {
+    width: 300px;
+    margin-left: 30px;
+}
+
+
+/*table header*/
+th{
+    background-color: black;
+    color: white;
+    position:sticky;
+    top:0;
+    left:0;
+    font-size: 20px;
+}
+
+/*Table elements*/
+td{
+    font-size: 20px;
+    padding: 2px 2px 2px 2px;
+}
+
+/*Table*/
+table{
+    height:auto;
+    width: auto;
+    max-width: 600px;
+    max-height: 600px;
+    display:block;
+    overflow-y: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Section Containing forms, warnings, and generate button*/
+#forms{
+    
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom:10px;
+    border: solid 2px black;
+    width: 850px;
+}
+
+/*label formatting*/
+label{
+    margin-left: 10px;
+}
+
+/*input*/
+input{
+    margin-bottom: 2.5px;
+    margin-top: 2.5px;
+}
+.submit{
+    margin-left:50%;
+}
+/*generate function button*/
+#gen{
+    margin-left: 40%;
+    margin-top: 20px;
+    margin-bottom:10px
+    
+}
+
+/*warning messages*/
+p{
+    display: inline;
+    color: black;
+}
+
+/*body*/
+body{
+    background-color: beige;
+}
